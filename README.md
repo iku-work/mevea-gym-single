@@ -1,4 +1,4 @@
-# Mevea-Gym-Toolbox
+# Mevea OpenAI Gym Environment 
 
 ## General info
 This is an implementation of the Mevea RL Gym with compliance to Open AI Gym.
