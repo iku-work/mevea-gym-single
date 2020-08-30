@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MeVEASimulation>
+  <Environment simulationName="Tutorial 1" useParticles="No" particlesInThread="Yes" particleCellsInThread="Yes" collisionGroupDefinitionsFile="" nCollisionThreads="1" />
+  <Models ModelFile="Jib_Crane.xml" solverID="1" useArchive="No" MPKFile="" hydraulicsSchematicFile="" />
+  <World WorldFile="Jib_Crane_world.xml" />
+</MeVEASimulation>

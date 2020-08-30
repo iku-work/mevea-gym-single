@@ -1,0 +1,42 @@
+
+Model: Jib_Crane
+
+Number of bodies: 4
+
+Number of generalized coordinates: 24
+
+Number of joint coordinates: 3
+
+Number of constraint equations: 0
+
+--------------------------------------------
+
+Number of DOFs: 3
+
+Number of RDOFs: 3
+
+Number of FDOFs: 0
+
+--------------------------------------------
+
+Number of entries of Cq rows 0 x cols 24 = 0
+
+Number of NZ entries: 0
+
+NNZ / N entries of Cq: -nan(ind) %
+
+--------------------------------------------
+
+Number of entries of R rows 24 x cols 3 = 72
+
+Number of NZ entries: 24
+
+NNZ / N entries of R: 33.33 %
+
+--------------------------------------------
+
+Number of entries of M rows 24 x cols 24 = 576
+
+Number of NZ entries: 120
+
+NNZ / N entries of M: 20.83 %

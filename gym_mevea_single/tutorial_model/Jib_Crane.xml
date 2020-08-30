@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <Model Name="Jib_Crane" Method="4" Integrator="1" SparseSolver="No" dt="0.002" tstop="3e4" update_frequency="30" error="0.001" hydrIntMethod="0" numHydrIntegr="10" nGSIterations="3" logoImageName="">
+    <Gravitation x="0" y="-9.81" z="0" />
+  </Model>
+  <MevPacker baseDir="" additionalDirs="" skipDirs="" files="" password="" modelId="0" modelIdString="Default" />
+  <ExternalInterface />
+  <Splines>
+    <Cyl_friction NPoints="12">
+      <x x1="0" x2="0" x3="0" x4="0.0001" x5="0.05" x6="0.1" x7="0.15" x8="0.2" x9="0.25" x10="0.3" x11="0.4" x12="1" />
+      <y y1="0" y2="0" y3="0" y4="1" y5="0.9" y6="0.4" y7="0.225" y8="0.2" y9="0.225" y10="0.25" y11="0.3" y12="0.45" />
+    </Cyl_friction>
+    <Motor_spline NPoints="8">
+      <x x1="0" x2="20" x3="40" x4="60" x5="80" x6="100" x7="120" x8="140" />
+      <y y1="100" y2="100" y3="95" y4="94" y5="89" y6="84" y7="80" y8="74" />
+    </Motor_spline>
+  </Splines>
+  <Bodies>
+    <Ground BodyType="Rigid" RelTo="Ground" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0">
+        <I Ixx="0" Iyy="0" Izz="0" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Ground>
+    <Pillar BodyType="Rigid" RelTo="Ground" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_Pillar" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="135">
+        <I Ixx="80.95" Iyy="20.1" Izz="97.9" Ixy="23" Izx="0.05" Iyz="0.02" />
+        <CM x="0.35" y="0.5" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+      <CS>
+        <LiftCylinder RefBody="" Node="0">
+          <Position x="0.47" y="0.32" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </LiftCylinder>
+        <LiftBoom RefBody="" Node="0">
+          <Position x="0.1" y="1.52" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </LiftBoom>
+        <Ground RefBody="" Node="0">
+          <Position x="0.2" y="0" z="0" />
+          <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+        </Ground>
+      </CS>
+    </Pillar>
+    <LiftBoom BodyType="Rigid" RelTo="Pillar" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_LiftBoom" CollisionGraphics="">
+      <Position x="0.1" y="1.52" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="270">
+        <I Ixx="14" Iyy="673.4" Izz="680.2" Ixy="54.3" Izx="0" Iyz="0" />
+        <CM x="1.13" y="0.12" z="0" />
+        <CMI x="1.13" y="0.12" z="0" />
+      </Inertia>
+      <CS>
+        <TiltBoom RefBody="" Node="0">
+          <Position x="2.32" y="0.1" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </TiltBoom>
+        <LiftPiston RefBody="" Node="0">
+          <Position x="0.8" y="-0.08" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </LiftPiston>
+        <TiltCylinder RefBody="" Node="0">
+          <Position x="1.3" y="0.24" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </TiltCylinder>
+        <Pillar RefBody="" Node="0">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Pillar>
+      </CS>
+    </LiftBoom>
+    <TiltBoom BodyType="Rigid" RelTo="LiftBoom" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_TiltBoom" CollisionGraphics="">
+      <Position x="2.32" y="0.1" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="114">
+        <I Ixx="420.4" Iyy="1960.3" Izz="2156.8" Ixy="859.3" Izx="0" Iyz="0" />
+        <CM x="0.87" y="0.19" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+      <CS>
+        <TiltPiston RefBody="" Node="0">
+          <Position x="-0.18" y="0.3" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </TiltPiston>
+        <LiftBoom RefBody="" Node="0">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </LiftBoom>
+        <Constraint11 RefBody="" Node="0">
+          <Position x="2" y="0.25" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Constraint11>
+      </CS>
+    </TiltBoom>
+    <Body1 BodyType="Rigid" RelTo="TiltBoom" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics2" CollisionGraphics="">
+      <Position x="2" y="0.26" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+      <CS>
+        <Constraint11 RefBody="" Node="0">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Constraint11>
+      </CS>
+    </Body1>
+  </Bodies>
+  <Dummies>
+    <Dummy_LiftCylinder DumType="B2BF" RelTo="ForceT_Lift" RelToCS="" DumNode="-1" DumInd="1" scriptName="" UsePF="No" VisualizationGraphics="Graphics_Cylinder" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="15">
+        <I Ixx="7" Iyy="2" Izz="7" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0.3" y="0" z="0" />
+        <CMI x="0.3" y="0" z="0" />
+      </Inertia>
+    </Dummy_LiftCylinder>
+    <Dummy_LiftPiston DumType="B2BF" RelTo="ForceT_Lift" RelToCS="" DumNode="-1" DumInd="2" scriptName="" UsePF="No" VisualizationGraphics="Graphics_Piston" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="11">
+        <I Ixx="6" Iyy="2" Izz="6" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.28" y="0" z="0" />
+        <CMI x="-0.28" y="0" z="0" />
+      </Inertia>
+    </Dummy_LiftPiston>
+    <Dummy_TiltCylinder DumType="B2BF" RelTo="ForceT_Tilt" RelToCS="" DumNode="-1" DumInd="1" scriptName="" UsePF="No" VisualizationGraphics="Graphics_Cylinder" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="15">
+        <I Ixx="7" Iyy="2" Izz="7" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0.3" y="0" z="0" />
+        <CMI x="0.3" y="0" z="0" />
+      </Inertia>
+    </Dummy_TiltCylinder>
+    <Dummy_TiltPiston DumType="B2BF" RelTo="ForceT_Tilt" RelToCS="" DumNode="-1" DumInd="2" scriptName="" UsePF="No" VisualizationGraphics="Graphics_Piston" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="11">
+        <I Ixx="6" Iyy="2" Izz="6" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.28" y="0" z="0" />
+        <CMI x="-0.28" y="0" z="0" />
+      </Inertia>
+    </Dummy_TiltPiston>
+    <Dummy1 DumType="Static" RelTo="Ground" RelToCS="" DumNode="-1" DumInd="0" scriptName="" UsePF="No" VisualizationGraphics="Graphics1" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy1>
+  </Dummies>
+  <Constraints>
+    <Ground_Pillar Type="3" Active="Yes" CutJoint="No" Body1="Ground" Body1CS="" NodeBody1="0" Body2="Pillar" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="1" z="0" />
+      <uc x="0" y="0" z="1" />
+      <ud x="0" y="0" z="0" />
+    </Ground_Pillar>
+    <Pillar_LiftBoom Type="3" Active="Yes" CutJoint="No" Body1="Pillar" Body1CS="" NodeBody1="0" Body2="LiftBoom" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="0.1" y="1.52" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </Pillar_LiftBoom>
+    <LiftBoom_Tiltboom Type="3" Active="Yes" CutJoint="No" Body1="LiftBoom" Body1CS="" NodeBody1="0" Body2="TiltBoom" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="2.32" y="0.1" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </LiftBoom_Tiltboom>
+    <Constraint1 Type="7" Active="Yes" CutJoint="No" Body1="TiltBoom" Body1CS="TiltBoom.Constraint11" NodeBody1="0" Body2="Body1" Body2CS="Body1.Constraint11" NodeBody2="0" d0="0" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="2" y="0.25" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </Constraint1>
+  </Constraints>
+  <Forces>
+    <B2BM>
+      <ForceR_Pillar Body1="Ground" Body1CS="" NodeBody1="0" Body2="Pillar" Body2CS="" NodeBody2="0" Input="" K="0" C="0" Kend="0" Cend="0" Thetamin="-10" Thetamax="10" Theta0="0" M="0">
+        <fi x="0" y="0" z="1" />
+        <gi x="1" y="0" z="0" />
+        <fj x="0" y="0" z="1" />
+      </ForceR_Pillar>
+    </B2BM>
+    <B2BF>
+      <ForceT_Lift Body1="Pillar" Body1CS="" NodeBody1="0" Body2="LiftBoom" Body2CS="" NodeBody2="0" Input="" K="0" C="0" Kend="0" Cend="0" L0="0" Lmin="0" Lmax="0" F="0" IsRope="No" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0.47" y="0.32" z="0" />
+        <Position2 x="0.8" y="-0.08" z="0" />
+      </ForceT_Lift>
+      <ForceT_Tilt Body1="LiftBoom" Body1CS="" NodeBody1="0" Body2="TiltBoom" Body2CS="" NodeBody2="0" Input="" K="0" C="0" Kend="0" Cend="0" L0="0.8441" Lmin="0" Lmax="0" F="0" IsRope="No" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="1.3" y="0.24" z="0" />
+        <Position2 x="-0.18" y="0.3" z="0" />
+      </ForceT_Tilt>
+    </B2BF>
+    <Motor>
+      <Rotate_motor Type="B2BM" PrimName="ForceR_Pillar" SplName="Motor_spline" Kw="10" Tao="0.1" idle="0" itot="500" r="0" J="10" MbrMax="0" BrVel="0.01" wref="0" isRunning="2" stall_limit="0" FCSplName="" SFC="0" idleFC="0" MidleLoad="0" />
+    </Motor>
+    <PowerTrain />
+    <Hydraulics Oil_B0="1600000000">
+      <DV43>
+        <DV43_Lift mainSpool="0" maxInput="10" nomInput="10" posAOverlap="0.5" posBOverlap="-0.5" centreFlowCE="100" flowSplinePA="" QnomPA="20" dpnomPA="7" flowSplineAT="" QnomAT="20" dpnomAT="7" flowSplinePB="" QnomPB="20" dpnomPB="7" flowSplineBT="" QnomBT="20" dpnomBT="7" Qleak="0.1" dpleak="100" tau="0.1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_LiftCyl_A" port3="Vol_LiftCyl_B" port4="Vol_Tank" />
+        </DV43_Lift>
+        <DV43_Tilt mainSpool="0" maxInput="10" nomInput="10" posAOverlap="0.5" posBOverlap="-0.5" centreFlowCE="100" flowSplinePA="" QnomPA="20" dpnomPA="7" flowSplineAT="" QnomAT="20" dpnomAT="7" flowSplinePB="" QnomPB="20" dpnomPB="7" flowSplineBT="" QnomBT="20" dpnomBT="7" Qleak="0.1" dpleak="100" tau="0.1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_TiltCyl_A" port3="Vol_TiltCyl_B" port4="Vol_Tank" />
+        </DV43_Tilt>
+      </DV43>
+      <Hoses>
+        <Hose_LiftCyl_A Type="0" L="1" Dinch="0.25" E="7e4" VolName="Vol_LiftCyl_A" />
+        <Hose_LiftCyl_B Type="0" L="1.5" Dinch="0.25" E="7e4" VolName="Vol_LiftCyl_B" />
+        <Hose_TiltCyl_A Type="0" L="2" Dinch="0.25" E="7e4" VolName="Vol_TiltCyl_A" />
+        <Hose_TiltCyl_B Type="0" L="2.5" Dinch="0.25" E="7e4" VolName="Vol_TiltCyl_B" />
+        <Hose_Tank Type="0" L="0.5" Dinch="0.375" E="7e4" VolName="" />
+        <Hose_Pump Type="0" L="0.5" Dinch="0.375" E="7e4" VolName="" />
+      </Hoses>
+      <Volumes>
+        <Vol_Pump Ind_pType="1" CTRL_IN="" p="1e7" Q="0" />
+        <Vol_Tank Ind_pType="1" CTRL_IN="" p="1e5" Q="0" />
+        <Vol_LiftCyl_A Ind_pType="0" CTRL_IN="" p="1e5" Q="0" />
+        <Vol_LiftCyl_B Ind_pType="0" CTRL_IN="" p="1e5" Q="0" />
+        <Vol_TiltCyl_A Ind_pType="0" CTRL_IN="" p="1e5" Q="0" />
+        <Vol_TiltCyl_B Ind_pType="0" CTRL_IN="" p="1e5" Q="0" />
+      </Volumes>
+      <Cylinders>
+        <LiftCylinder Type="0" PrimName="ForceT_Lift" SplName="Cyl_friction" d1mm="50" d2mm="20" d3mm="0" d4mm="0" LRmm="644" LCmm="650" LPmm="70" LAmm="100" xminmm="30" xmaxmm="450" Bc="1e10" nyy="0.9" Qleak="0" dpleak="100" k="1e7" c="2e5" isHydraulicDamper="No" maxDampingPressure="0" dampingLength="0" dampingCE="0">
+          <Port_Volume port1="Vol_LiftCyl_A" port2="Vol_LiftCyl_B" port3="" />
+        </LiftCylinder>
+        <TiltCylinder Type="0" PrimName="ForceT_Tilt" SplName="Cyl_friction" d1mm="50" d2mm="20" d3mm="0" d4mm="0" LRmm="644" LCmm="600" LPmm="70" LAmm="100" xminmm="30" xmaxmm="500" Bc="1e10" nyy="0.9" Qleak="0" dpleak="100" k="1e7" c="2e5" isHydraulicDamper="No" maxDampingPressure="0" dampingLength="0" dampingCE="0">
+          <Port_Volume port1="Vol_TiltCyl_A" port2="Vol_TiltCyl_B" port3="" />
+        </TiltCylinder>
+      </Cylinders>
+    </Hydraulics>
+  </Forces>
+  <Electrics />
+  <Graphics>
+    <Graphics_Pillar Body="Pillar" FileName="./Graphics/Pillar.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Pillar>
+    <Graphics_LiftBoom Body="LiftBoom" FileName="Graphics/LiftBoom.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_LiftBoom>
+    <Graphics_TiltBoom Body="TiltBoom" FileName="Graphics/TiltBoom.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_TiltBoom>
+    <Graphics_Cylinder Body="Dummy_LiftCylinder;Dummy_TiltCylinder" FileName="./Graphics/LiftCylinder.3ds" Scale="2.5" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Cylinder>
+    <Graphics_Piston Body="Dummy_LiftPiston;Dummy_TiltPiston" FileName="./Graphics/LiftPistonRod.3ds" Scale="2.5" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Piston>
+    <Graphics1 Body="Dummy1" FileName="Graphics/goal_red.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="GGX" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Graphics1>
+    <Graphics2 Body="Body1" FileName="Graphics/goal_green.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="GGX" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Graphics2>
+  </Graphics>
+  <Collisions />
+  <DataSources>
+    <DataSource4 Name="DataSource4" TypeName="SimulationProperties" ComponentName="Simulation" ParameterName="Time" Function="" IirName="" Scale="1" Offset="0" Uniform="No" />
+  </DataSources>
+  <DesignVariables />
+  <ObjectMover />
+  <Inputs>
+    <Input_Pillar_Rotate name="Input_Pillar_Rotate" isActive="Yes" InType="Analog" PrimType="Motor" JoyNro="0" JoyCh="0" InputSource="" positiveOnly="No" Scale="-140" B="0" DeadZone="0.1" delay="0" hold="0" scriptName="Script1" PrimSub="0" PrimName="Rotate_motor" />
+    <Input_Pillar_Brake name="Input_Pillar_Brake" isActive="Yes" InType="Analog" PrimType="Motor" JoyNro="0" JoyCh="0" InputSource="" positiveOnly="No" Scale="0" B="0.2" DeadZone="0" delay="0" hold="0" scriptName="" PrimSub="2" PrimName="Rotate_motor" />
+    <Input_Lift name="Input_Lift" isActive="Yes" InType="Analog" PrimType="DV43" JoyNro="1" JoyCh="1" InputSource="" positiveOnly="No" Scale="-10" B="0" DeadZone="0.1" delay="0" hold="0" scriptName="" PrimSub="0" PrimName="DV43_Lift" />
+    <Input_Tilt name="Input_Tilt" isActive="Yes" InType="Analog" PrimType="DV43" JoyNro="0" JoyCh="1" InputSource="" positiveOnly="No" Scale="-10" B="0" DeadZone="0.1" delay="0" hold="0" scriptName="" PrimSub="0" PrimName="DV43_Tilt" />
+  </Inputs>
+  <Outputs />
+  <MotionPlatformControl />
+  <FMI>
+    <FMI20>
+      <FMICS20 />
+    </FMI20>
+  </FMI>
+  <VirtualSensors>
+    <LaserScanners>
+      <LaserScanner1 AttachmentBody="" AngleIncrementInDeg="1" MaximumScanningDistance="10" NumberOfLines="1" UpdateEveryNRounds="3">
+        <Position x="0" y="0" z="0" />
+        <Direction x="0" y="0" z="0" />
+        <RotationAxis x="0" y="0" z="0" />
+      </LaserScanner1>
+    </LaserScanners>
+  </VirtualSensors>
+  <Scripting>
+    <Script>
+      <Script1 name="Script1" executionType="Continuous" timingType="Simulation time" fileName="Scripts/mevea.py" />
+    </Script>
+  </Scripting>
+</DMInputFile>

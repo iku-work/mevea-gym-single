@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <Schematics>
+    <Hydr1>
+      <Elements>
+        <DV43_Lift Name="DV43_Lift" className="DV43" x="602" y="465" rotate="0" mirrorx="No" mirrory="No" />
+        <DV43_Tilt Name="DV43_Tilt" className="DV43" x="414" y="466" rotate="0" mirrorx="No" mirrory="No" />
+        <LiftCylinder Name="LiftCylinder" className="Cylinder" x="624" y="709" rotate="0" mirrorx="No" mirrory="No" />
+        <TiltCylinder Name="TiltCylinder" className="Cylinder" x="438" y="703" rotate="0" mirrorx="No" mirrory="No" />
+        <Vol_Pump Name="Vol_Pump" className="Volume" x="517" y="338" rotate="90" mirrorx="No" mirrory="No" />
+        <Vol_Tank Name="Vol_Tank" className="Volume" x="608" y="239" rotate="90" mirrorx="No" mirrory="No" />
+        <Vol_LiftCyl_A Name="Vol_LiftCyl_A" className="Volume" x="621" y="585" rotate="0" mirrorx="No" mirrory="Yes" />
+        <Vol_LiftCyl_B Name="Vol_LiftCyl_B" className="Volume" x="666" y="583" rotate="0" mirrorx="No" mirrory="Yes" />
+        <Vol_TiltCyl_A Name="Vol_TiltCyl_A" className="Volume" x="435" y="608" rotate="0" mirrorx="No" mirrory="Yes" />
+        <Vol_TiltCyl_B Name="Vol_TiltCyl_B" className="Volume" x="480" y="610" rotate="0" mirrorx="No" mirrory="Yes" />
+      </Elements>
+    </Hydr1>
+  </Schematics>
+</DMInputFile>

@@ -1,0 +1,18 @@
+Collisions group names:
+
+	group #0: LaserScanner1   has 0 collision pairs and 1 bodies
+A total of 0 collision pairs in 1 groups:
+
+
+
+
+************************************************************************************************
+
+************************************************************************************************
+
+Collisions by groups groups:
+
+Group LaserScanner1:
+
+
+

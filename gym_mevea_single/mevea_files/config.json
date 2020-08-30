@@ -1,0 +1,14 @@
+{
+    "debug": false,
+    "episode_duration[s]": 45,
+    "excluded_inputs": [],
+    "excluded_items": [
+        "Ground",
+        "Constraints "
+    ],
+    "model_name": "Jib_Crane",
+    "port": 6001,
+    "render": true,
+    "step_delay[s]": 0,
+    "step_max_duration[ms]": 1000
+}

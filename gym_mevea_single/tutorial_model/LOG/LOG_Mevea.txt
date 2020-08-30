@@ -1,0 +1,46 @@
+03:14:10: Model Jib_Crane loaded, using config and resources from C:/Program Files (x86)/Mevea/
+03:14:12: intitializing laser scanners
+03:14:13: NOTE: File "" is not present. Continuing...
+03:14:13: Setting camera to body 0: Ground
+03:14:13: Head Tracking inactive
+03:14:13: Total loading time 2.974999
+03:14:13: Uninitialized collision body 
+03:14:14: Uninitialized collision body 
+03:14:15: Uninitialized collision body 
+03:14:16: Uninitialized collision body 
+03:14:19: Uninitialized collision body 
+03:14:21: intitializing laser scanners
+03:14:21: Uninitialized collision body 
+03:14:22: Uninitialized collision body 
+03:14:23: Uninitialized collision body 
+03:14:24: Uninitialized collision body 
+03:14:25: Uninitialized collision body 
+03:14:28: Uninitialized collision body 
+03:14:30: intitializing laser scanners
+03:14:30: Uninitialized collision body 
+03:14:31: Uninitialized collision body 
+03:14:32: Uninitialized collision body 
+03:14:33: Uninitialized collision body 
+03:14:34: Uninitialized collision body 
+03:14:36: Uninitialized collision body 
+03:14:37: Uninitialized collision body 
+03:14:39: intitializing laser scanners
+03:14:39: Uninitialized collision body 
+03:14:40: Uninitialized collision body 
+03:14:41: Uninitialized collision body 
+03:14:42: Uninitialized collision body 
+03:14:43: Uninitialized collision body 
+03:14:45: Uninitialized collision body 
+03:14:48: intitializing laser scanners
+03:14:48: Uninitialized collision body 
+03:14:49: Uninitialized collision body 
+03:14:50: Uninitialized collision body 
+03:14:51: Uninitialized collision body 
+03:14:52: Uninitialized collision body 
+03:14:54: Uninitialized collision body 
+03:14:57: intitializing laser scanners
+03:14:57: Uninitialized collision body 
+03:14:58: Uninitialized collision body 
+03:14:59: Uninitialized collision body 
+03:15:00: Uninitialized collision body 
+03:15:01: Uninitialized collision body 

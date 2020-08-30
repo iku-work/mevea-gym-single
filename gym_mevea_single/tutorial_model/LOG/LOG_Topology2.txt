@@ -1,0 +1,54 @@
+
+INFORMATION: Checking model "Jib_Crane" topology.
+
+
+INFORMATION: Checking of kinematic loops.
+
+INFORMATION: End of kinematic loop at body "Body1", last constraint is "Constraint1".
+
+INFORMATION: Setting of parent constraints.
+
+INFORMATION: Parent constraint of body "Pillar" is "Ground_Pillar".
+INFORMATION: Parent constraint of body "LiftBoom" is "Pillar_LiftBoom".
+INFORMATION: Parent constraint of body "TiltBoom" is "LiftBoom_Tiltboom".
+INFORMATION: Parent constraint of body "Body1" is "Constraint1".
+
+INFORMATION: Checking of constraint order.
+
+Current body Body1, parent constraint Constraint1 constraintIndex = 3, parent body TiltBoom
+Current body TiltBoom, parent constraint LiftBoom_Tiltboom constraintIndex = 2, parent body LiftBoom
+Current body LiftBoom, parent constraint Pillar_LiftBoom constraintIndex = 1, parent body Pillar
+Current body Pillar, parent constraint Ground_Pillar constraintIndex = 0, parent body Ground
+
+Current body TiltBoom, parent constraint LiftBoom_Tiltboom constraintIndex = 2, parent body LiftBoom
+Current body LiftBoom, parent constraint Pillar_LiftBoom constraintIndex = 1, parent body Pillar
+Current body Pillar, parent constraint Ground_Pillar constraintIndex = 0, parent body Ground
+
+Current body LiftBoom, parent constraint Pillar_LiftBoom constraintIndex = 1, parent body Pillar
+Current body Pillar, parent constraint Ground_Pillar constraintIndex = 0, parent body Ground
+
+Current body Pillar, parent constraint Ground_Pillar constraintIndex = 0, parent body Ground
+
+
+
+INFORMATION: Updated model topology:
+
+INFORMATION: Bodies
+INFORMATION: Parent body of "Pillar" is "Ground".
+INFORMATION: Parent body of "LiftBoom" is "Pillar".
+INFORMATION: Parent body of "TiltBoom" is "LiftBoom".
+INFORMATION: Parent body of "Body1" is "TiltBoom".
+
+INFORMATION: Constraints
+INFORMATION: Preceding body of constraint "Ground_Pillar" is "Ground".
+INFORMATION: Following body of constraint "Ground_Pillar" is "Pillar".
+
+INFORMATION: Preceding body of constraint "Pillar_LiftBoom" is "Pillar".
+INFORMATION: Following body of constraint "Pillar_LiftBoom" is "LiftBoom".
+
+INFORMATION: Preceding body of constraint "LiftBoom_Tiltboom" is "LiftBoom".
+INFORMATION: Following body of constraint "LiftBoom_Tiltboom" is "TiltBoom".
+
+INFORMATION: Preceding body of constraint "Constraint1" is "TiltBoom".
+INFORMATION: Following body of constraint "Constraint1" is "Body1".
+

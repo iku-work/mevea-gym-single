@@ -1,0 +1,29 @@
+h[0] = Ground_Pillar.z0 = 0.000000
+h[1] = Pillar_LiftBoom.z0 = 0.000000
+h[2] = LiftBoom_Tiltboom.z0 = 0.000000
+h[3] = Ground_Pillar.zd0 = 0.000000
+h[4] = Pillar_LiftBoom.zd0 = 0.000000
+h[5] = LiftBoom_Tiltboom.zd0 = 0.000000
+Number of differential equations 9 -------
+Tyres --------------------------------------
+Motors -------------------------------------
+h[6] =Rotate_motor.w  = 0.000000
+h[7] =Rotate_motor.wd = 0.000000
+h[8] =Rotate_motor.Md = 0.000000
+Pressures ----------------------------------
+h[9] =Vol_Pump.p = 10000000.000000
+h[10] =Vol_Tank.p = 100000.000000
+h[11] =Vol_LiftCyl_A.p = 100000.000000
+h[12] =Vol_LiftCyl_B.p = 100000.000000
+h[13] =Vol_TiltCyl_A.p = 100000.000000
+h[14] =Vol_TiltCyl_B.p = 100000.000000
+Hydraulic motors ---------------------------
+2/2 Valves ---------------------------------
+PVG32 Valves ----------------------
+L90LS Valves ----------------------
+D1VW Valves ----------------------
+Pressure Compensated Proportional Valves ---
+M4-15 Valves ----------------------
+M200LS Valves ----------------------
+Bosch Rexroth MHRB Valves ----------
+Bucher CINDY Valves ----------------

@@ -1,0 +1,93 @@
+
+
+MODEL STRUCTURE:
+
+Number of bodies : 									4
+Number of joints : 									4
+Number of joint coordinates : 						3
+Number of closed loop constraint equations : 		0
+DOF : 												3
+
+
+
+
+Vector of body preceding body indices :
+0   0   1   2   3   
+
+
+Preceding bodies :
+
+Ground <-- Pillar 
+Pillar <-- LiftBoom 
+LiftBoom <-- TiltBoom 
+TiltBoom <-- Body1 
+
+Vector of kinematic chain final bodies :
+
+
+Body											 Final 
+
+Ground                                   		 No
+Pillar                                   		 No
+LiftBoom                                 		 No
+TiltBoom                                 		 No
+Body1                                    		 Yes
+
+
+Joints and bodies related to a joint
+
+=================================
+
+Ground_Pillar 
+
+Number of preceding bodies = 1 
+Number of preceding joints = 1
+---------------------------------
+Pillar 
+	--> Ground_Pillar -->
+		Ground
+
+=================================
+
+Pillar_LiftBoom 
+
+Number of preceding bodies = 2 
+Number of preceding joints = 2
+---------------------------------
+LiftBoom 
+	--> Pillar_LiftBoom -->
+		Pillar
+			--> Ground_Pillar -->
+				Ground
+
+=================================
+
+LiftBoom_Tiltboom 
+
+Number of preceding bodies = 3 
+Number of preceding joints = 3
+---------------------------------
+TiltBoom 
+	--> LiftBoom_Tiltboom -->
+		LiftBoom
+			--> Pillar_LiftBoom -->
+				Pillar
+					--> Ground_Pillar -->
+						Ground
+
+=================================
+
+Constraint1 
+
+Number of preceding bodies = 4 
+Number of preceding joints = 4
+---------------------------------
+Body1 
+	--> Constraint1 -->
+		TiltBoom
+			--> LiftBoom_Tiltboom -->
+				LiftBoom
+					--> Pillar_LiftBoom -->
+						Pillar
+							--> Ground_Pillar -->
+								Ground

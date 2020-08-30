@@ -1,0 +1,27 @@
+03:14:54: DM Manager started
+03:14:56: Manager selects port 4763
+03:14:56: Manager creating model
+03:14:56: Manager waiting for GUI to connect
+03:14:56: Manager got connect from GUI
+03:14:56: DMHandleNewConnection: Got PDU: ID=1002, Type=1002, dsize=0
+03:14:56: GUI going to receive Environment Parameters
+03:14:56: Manager receiving environment:
+03:14:56: FINISHED RECEIVING ENVIRONMENT, xmlname member: C:\Data\Mevea-Gym-Toolbox2\gym-mevea-single\gym_mevea_single\tutorial_model\Jib_Crane.mvs
+03:14:56: Manager will parse files
+03:14:56: Manager got environment: 1 solvers
+03:14:56: Adding socket to GUI sockets 0
+03:14:56: GUI connected
+03:14:56: GUI ready, creating solvers
+03:14:56: Creating nSolvers = 1 threads from 1 factories
+03:14:56: Creating solver from Standard Factory
+03:14:57: Solver created using Standard Factory
+03:14:57: Select() returns 1: New Connection
+03:14:57: DMHandleNewConnection: Got PDU: ID=0, Type=1001, dsize=0
+03:14:57: Adding socket to Solver Sockets (solverid)
+03:14:57: Solver 0 ready
+03:14:57: GUI -1 wants to start
+03:14:57: Starting all
+03:14:57: Sending start to solver 0
+03:14:57: Got response PDU_ACK from solver 0
+03:14:57: Sending start to GUI, sock[2]!
+03:14:57: Got response PDU_ACK from GUI!

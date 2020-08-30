@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <World>
+    <Properties useAntiAliasing="No" aaSize="4" vsync="Yes" useFragmentLight="No" overrideOptions="No" maxActiveLights="8" defaultSceneShader="" useHeadTracking="No" headTrackingMode="Symmetric" computeNearFar="No" displaySizeWidth="0.4" displaySizeHeight="0.3" displaySizeDistance="0.5" MaterialsFileLocation="" motionblur_persistence="0" textureScaleDownFactor="1" textureMaxResolution="4096" environmentReflectionCube="" mergeTextures="No" alpha_func_c="GREATER" alpha_ref="0.5" programDefinitions="" textureDefinitions="" plantDefinitions="" plantPositions="" setClearColor="No" useShadows="No" shadowUseFragment="Yes" shadowTextureSize="2048" shadowMinLightMargin="20" shadowMaxFarPlane="50000" shadowStyle="1" shadowDebugDraw="No" shadowIntensity="0.5" shadowFog="No" defaultShadowShader="" useForestShadow="No" useTouchScreen="No" touchScreenPositionX="0" touchScreenPositionY="0" touchScreenSizeX="0" touchScreenSizeY="0" touchScreenNames="" touchScreenFontName="" touchScreenFontSize="24" touchScreenMenuTextureBase="" touchScreenMenuTextureHover="">
+      <clearColor R="0" G="0" B="0" A="1" />
+      <cameraLimits useCameraLimits="No" xMin="-1000" xMax="1000" yMin="0" yMax="100" zMin="-1000" zMax="1000" />
+      <touchScreenBackgroundColor R="0.2" G="0.2" B="0.6" A="1" />
+      <touchScreenFontColor R="0" G="0" B="0" A="1" />
+    </Properties>
+    <Cameras>
+      <Camera_Side RefBody="Ground" RefBodyLookAt="Ground" AcceptHeadTracking="No" AcceptViewAdjustments="Yes" fov="45">
+        <Position x="0" y="5" z="10" />
+        <LookAt x="0" y="0" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Side>
+      <Camera_Pillar RefBody="Pillar" RefBodyLookAt="Pillar" AcceptHeadTracking="No" AcceptViewAdjustments="Yes" fov="45">
+        <Position x="-0.8" y="1.5" z="0.4" />
+        <LookAt x="2" y="1" z="0.2" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Pillar>
+    </Cameras>
+    <Light>
+      <Light1 IsActive="Yes">
+        <Position x="0" y="10" z="15" Fixed="1" />
+        <Diffuse R="0.5" G="0.5" B="0.5" A="1" />
+        <Specular R="0.5" G="0.5" B="0.5" A="1" />
+        <Ambient R="0.5" G="0.5" B="0.5" A="1" />
+      </Light1>
+    </Light>
+    <Scenes>
+      <Scene1 Camera="Camera_Side" DrawAxis="No" FoVy="45" ZFront="1" ZRear="500" AxisScale="0.05" useFrames="No" isActive="No" stayOnTop="No" SizeX="0" SizeY="0" PositionX="0" PositionY="0" />
+    </Scenes>
+    <Sounds AttachedToBody="" soundVolumeMultiplier="0" soundViewerDirectionX="0" soundViewerDirectionY="0" soundViewerDirectionZ="0" soundViewerPositionX="0" soundViewerPositionY="0" soundViewerPositionZ="0" />
+  </World>
+  <WeatherCollection activeWeather="" automaticTransition="No">
+    <Ocean>
+      <Ocean1 name="Ocean1" IsActive="No" SurfaceHeight="-5" IsGodRays="Yes" IsEndless="Yes" IsSilt="Yes" IsDistortion="Yes" IsGlare="No" GlareAttenuation="0.8" UseShaders="Yes" IsReflections="Yes" IsRefractions="Yes" IsUnderWaterDOF="Yes" IsChoppy="Yes" ChoppyFactor="2.5" WindSpeed="12" WindX="1.1" WindY="1.1" ReflectionDamping="0.35" Depth="1000" Scale="10.0e-9" CrestFoamHeight="2.2" FoamBottomHeight="2.2" FoamTopHeight="3" AboveWaterFog="0.0012" UnderwaterFog="0.002" fftGridSize="64" Resolution="256" NumTiles="17">
+        <LightColor r="105" g="138" b="174" />
+        <AboveWaterFogColor r="0" g="0" b="0" />
+        <UnderwaterFogColor r="27" g="57" b="109" />
+        <UnderwaterDiffuseColor r="27" g="57" b="109" />
+        <UnderwaterAttenuation r="0.015" g="0.0075" b="0.005" />
+        <SunDirection x="-0.18221549689769744873" y="-0.67743921279907226563" z="-0.71265262365341186523" />
+        <ScreenDims x="1920" y="1200" />
+        <CylinderSize x="1900" y="4000" />
+      </Ocean1>
+    </Ocean>
+    <Sky>
+      <Sky1 name="Sky1" IsActive="No" Latitude="38.4765" Longitude="25.493" Radius="1e4" MoonScale="1" SunScale="1" useSouthernHemisphere="Yes" mirrorSouthernHemisphere="Yes" moveWithEyePoint="Yes" drawGroundPlane="No" showStars="Yes" year="2011" month="5" day="14" hour="5" minute="21" second="1" dayCycleActive="Yes" dayCycleScale="1" GroundHeight="-20" GroundTextureName="" GroundTextureRepeat="1">
+        <Center x="0" y="0" z="0" />
+        <GroundColor r="0.1" g="1" b="0.1" a="1" />
+        <Shader shaderPath="" horizonTexture="" />
+      </Sky1>
+    </Sky>
+    <LensFlare>
+      <Flare1 name="Flare1" IsActive="No" lensFlareGeometry="" lensFlareTexture="" Shader="" />
+    </LensFlare>
+    <Wind>
+      <Wind1 name="Wind1" isActive="No" isGusty="Yes" windSpeed="5" windFrequency="0.2" windAmplitude="0.3" windDirection="90" angleVariance="15" />
+    </Wind>
+    <Precipitation>
+      <Rain1 name="Rain1" isActive="No" rainType="Rain" usePreset="No" rainPreset="Storm" useRainIntensity="Yes" rainIntensity="1" rainParticleSize="0.03" rainMaxParticleDensity="8.6" rainParticleSpeed="-7" rainNearTransition="25" rainFarTransition="40" useSnowIntensity="Yes" snowIntensity="0.5" snowParticleSize="0.04" snowMaxParticleDensity="4" snowParticleSpeed="-2" snowNearTransition="25" snowFarTransition="40">
+        <rainParticleColor r="0.5" g="0.5" b="0.5" a="0" />
+        <snowParticleColor r="0.8" g="0.8" b="0.8" a="0.5" />
+      </Rain1>
+    </Precipitation>
+    <WeatherCollection>
+      <Preset1 name="Preset1" oceanName="Ocean1" skyName="Sky1" flareName="Flare1" windName="Wind1" precipitationName="Rain1" fogName="" autoTransitionTime="10" />
+    </WeatherCollection>
+  </WeatherCollection>
+</DMInputFile>
