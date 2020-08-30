@@ -39,3 +39,7 @@ sim = gym.make('gym_mevea_single:mevea-custom-v0')
 
 To use custom model provide mvs file folder as argument:
 ```
+mvs_folder = model_folder_path
+kwargs = {'mvs_folder': mvs_folder}
+sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
+```
