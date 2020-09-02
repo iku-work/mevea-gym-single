@@ -1,5 +1,5 @@
 {
-    "debug": true,
+    "debug": false,
     "episode_duration[s]": 45,
     "excluded_inputs": [],
     "excluded_items": [
@@ -9,7 +9,7 @@
         "Dummies"
     ],
     "model_name": "Jib_Crane",
-    "port": 6001,
+    "port": 6003,
     "render": true,
     "step_delay[s]": 0,
     "step_max_duration[ms]": 1000

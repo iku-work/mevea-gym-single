@@ -1,27 +1,27 @@
-03:14:54: DM Manager started
-03:14:56: Manager selects port 4763
-03:14:56: Manager creating model
-03:14:56: Manager waiting for GUI to connect
-03:14:56: Manager got connect from GUI
-03:14:56: DMHandleNewConnection: Got PDU: ID=1002, Type=1002, dsize=0
-03:14:56: GUI going to receive Environment Parameters
-03:14:56: Manager receiving environment:
-03:14:56: FINISHED RECEIVING ENVIRONMENT, xmlname member: C:\Data\Mevea-Gym-Toolbox2\gym-mevea-single\gym_mevea_single\tutorial_model\Jib_Crane.mvs
-03:14:56: Manager will parse files
-03:14:56: Manager got environment: 1 solvers
-03:14:56: Adding socket to GUI sockets 0
-03:14:56: GUI connected
-03:14:56: GUI ready, creating solvers
-03:14:56: Creating nSolvers = 1 threads from 1 factories
-03:14:56: Creating solver from Standard Factory
-03:14:57: Solver created using Standard Factory
-03:14:57: Select() returns 1: New Connection
-03:14:57: DMHandleNewConnection: Got PDU: ID=0, Type=1001, dsize=0
-03:14:57: Adding socket to Solver Sockets (solverid)
-03:14:57: Solver 0 ready
-03:14:57: GUI -1 wants to start
-03:14:57: Starting all
-03:14:57: Sending start to solver 0
-03:14:57: Got response PDU_ACK from solver 0
-03:14:57: Sending start to GUI, sock[2]!
-03:14:57: Got response PDU_ACK from GUI!
+15:59:10: DM Manager started
+15:59:12: Manager selects port 4763
+15:59:12: Manager creating model
+15:59:12: Manager waiting for GUI to connect
+15:59:12: Manager got connect from GUI
+15:59:12: DMHandleNewConnection: Got PDU: ID=1002, Type=1002, dsize=0
+15:59:12: GUI going to receive Environment Parameters
+15:59:12: Manager receiving environment:
+15:59:12: FINISHED RECEIVING ENVIRONMENT, xmlname member: c:\data\meveaopenaigym\mevea-gym-single\gym_mevea_single\tutorial_model\\Scripts\..\Jib_Crane.mvs
+15:59:12: Manager will parse files
+15:59:12: Manager got environment: 1 solvers
+15:59:12: Adding socket to GUI sockets 0
+15:59:12: GUI connected
+15:59:12: GUI ready, creating solvers
+15:59:12: Creating nSolvers = 1 threads from 1 factories
+15:59:12: Creating solver from Standard Factory
+15:59:13: Solver created using Standard Factory
+15:59:13: Select() returns 1: New Connection
+15:59:13: DMHandleNewConnection: Got PDU: ID=0, Type=1001, dsize=0
+15:59:13: Adding socket to Solver Sockets (solverid)
+15:59:13: Solver 0 ready
+15:59:13: GUI -1 wants to start
+15:59:13: Starting all
+15:59:13: Sending start to solver 0
+15:59:13: Got response PDU_ACK from solver 0
+15:59:13: Sending start to GUI, sock[2]!
+15:59:13: Got response PDU_ACK from GUI!

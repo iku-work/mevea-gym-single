@@ -158,6 +158,10 @@ class ModelParameters():
       self.copy(mvs_path,self.new_folder)
       self.path = self.new_folder
 
+    else:
+        self.new_folder = mvs_path
+
+
     self.xml_reader = XMLreader(self.new_folder,port)
     self.model_file_path = self.xml_reader.mvs_path
 
@@ -320,22 +324,13 @@ class XMLreader:
         
         self.mvs_path = mvs_path
         self.port = port
-        
-        print(self.port)
-
         self.config_path = '{}\{}'.format(mvs_path,'Scripts')
-
-        print(self.config_path)
 
         # Get useful data from the config.json file
         self.current_dir_path, self.model_name, self.exclude, self.excluded_inputs = self.read_config_json()
 
         # Find simulation model xml file
         self.model_file_path = '{}\{}\{}.{}'.format(str(self.current_dir_path), '..', str(self.model_name), 'xml')
-
-        #self.mvs_path = '{}\{}\{}.{}'.format(str(self.current_dir_path), '..', str(self.model_name), 'mvs')
-
-        #print(self.model_file_path)
 
         # Open file
         self.xmldoc = ET.parse(self.model_file_path)
