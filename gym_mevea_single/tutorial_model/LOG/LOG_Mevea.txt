@@ -1,9 +1,13 @@
-15:59:10: Model Jib_Crane loaded, using config and resources from C:/Program Files (x86)/Mevea/
-15:59:12: intitializing laser scanners
-15:59:13: NOTE: File "" is not present. Continuing...
-15:59:13: Setting camera to body 0: Ground
-15:59:13: Head Tracking inactive
-15:59:13: Total loading time 3.456534
-15:59:13: Uninitialized collision body 
-15:59:14: Uninitialized collision body 
-15:59:15: Uninitialized collision body 
+14:17:02: Model Jib_Crane loaded, using config and resources from C:/Program Files (x86)/Mevea/
+14:17:04: intitializing laser scanners
+14:17:04: NOTE: File "" is not present. Continuing...
+14:17:04: Setting camera to body 0: Ground
+14:17:04: Head Tracking inactive
+14:17:05: Total loading time 3.621229
+14:17:05: Uninitialized collision body 
+14:17:06: Uninitialized collision body 
+14:17:07: Uninitialized collision body 
+14:17:08: Uninitialized collision body 
+14:17:11: Uninitialized collision body 
+14:17:13: intitializing laser scanners
+14:17:13: Uninitialized collision body 

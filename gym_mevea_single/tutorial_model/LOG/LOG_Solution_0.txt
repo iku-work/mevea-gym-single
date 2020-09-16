@@ -21,34 +21,4 @@ Start command received
  SOLUTION STARTED
 Analysis length 30000.000000 seconds
 
-Round=500, Average time=  0.000139 Last   0.000242 s Biggest 0.002933
-Round=1000, Average time=  0.000113 Last   0.001319 s Biggest 0.001683
-Round=1500, Average time=  0.000110 Last   0.000253 s Biggest 0.001491
-Round=2000, Average time=  0.000131 Last   0.000289 s Biggest 0.007794
-Round=2500, Average time=  0.000110 Last   0.000333 s Biggest 0.001644
-Round=3000, Average time=  0.000112 Last   0.000040 s Biggest 0.001529
-Round=3500, Average time=  0.000111 Last   0.000237 s Biggest 0.001639
-Round=4000, Average time=  0.000105 Last   0.000336 s Biggest 0.001529
-Round=4500, Average time=  0.000220 Last   0.000301 s Biggest 0.054198
-Round=5000, Average time=  0.000108 Last   0.000366 s Biggest 0.001783
-Round=5500, Average time=  0.000106 Last   0.000359 s Biggest 0.001591
-Round=6000, Average time=  0.000106 Last   0.000276 s Biggest 0.001431
-Round=6500, Average time=  0.000114 Last   0.000297 s Biggest 0.001615
-Round=7000, Average time=  0.000108 Last   0.000251 s Biggest 0.001959
-Round=7500, Average time=  0.000111 Last   0.000366 s Biggest 0.001706
-Round=8000, Average time=  0.000117 Last   0.000254 s Biggest 0.001598
-Round=8500, Average time=  0.000111 Last   0.000260 s Biggest 0.001797
-Round=9000, Average time=  0.000125 Last   0.000263 s Biggest 0.002099
-Round=9500, Average time=  0.000113 Last   0.000200 s Biggest 0.001472
-Round=10000, Average time=  0.000118 Last   0.000353 s Biggest 0.001757
-Round=10500, Average time=  0.000130 Last   0.000282 s Biggest 0.007165
-Round=11000, Average time=  0.000109 Last   0.000255 s Biggest 0.001565
-Round=11500, Average time=  0.000111 Last   0.000309 s Biggest 0.001991
-Round=12000, Average time=  0.000117 Last   0.000274 s Biggest 0.001804
-Round=12500, Average time=  0.000113 Last   0.000328 s Biggest 0.001670
-Round=13000, Average time=  0.000120 Last   0.000295 s Biggest 0.001908
-Round=13500, Average time=  0.000108 Last   0.000236 s Biggest 0.001802
-Round=14000, Average time=  0.000131 Last   0.000717 s Biggest 0.001749
-Round=14500, Average time=  0.000175 Last   0.000508 s Biggest 0.002645
-Round=15000, Average time=  0.000185 Last   0.000479 s Biggest 0.002291
-Round=15500, Average time=  0.000149 Last   0.000244 s Biggest 0.002010
+Round=500, Average time=  0.000495 Last   0.000609 s Biggest 0.050291

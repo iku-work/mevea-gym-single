@@ -6,6 +6,7 @@ This is an implementation of the Mevea RL Gym with compliance to Open AI Gym.
     
 ## Requirements
 
+- Mevea Simulation Software ver.2.4.5
 - pyzmq
 - numpy
     

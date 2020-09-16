@@ -9,7 +9,7 @@
         "Dummies"
     ],
     "model_name": "Jib_Crane",
-    "port": 6003,
+    "port": 6002,
     "render": true,
     "step_delay[s]": 0,
     "step_max_duration[ms]": 1000

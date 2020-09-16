@@ -1,5 +1,5 @@
-15:59:12: DMClient started, nSolvers=0, solverID=1002
-15:59:12: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=504 (additional 100)
-15:59:12: ID 1002, sending pdu 1002 
-15:59:12: filename: c:\data\meveaopenaigym\mevea-gym-single\gym_mevea_single\tutorial_model\\Scripts\..\Jib_Crane.mvs, length 97
-15:59:13: Simulation started...
+14:17:13: DMClient started, nSolvers=0, solverID=1002
+14:17:13: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=504 (additional 100)
+14:17:13: ID 1002, sending pdu 1002 
+14:17:13: filename: c:\data\meveaopenaigym\mevea-gym-single\gym_mevea_single\tutorial_model\\Scripts\..\Jib_Crane.mvs, length 97
+14:17:13: Simulation started...
