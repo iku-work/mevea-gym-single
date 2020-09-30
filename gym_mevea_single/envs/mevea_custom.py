@@ -14,6 +14,8 @@ import time
 import json
 import zmq
 import uuid
+import msvcrt
+import sys
 
 #from stable_baselines.common.env_checker import check_env
 
@@ -24,38 +26,43 @@ class MeveaEnv(gym.Env):
   def __init__(self, mvs_folder):
     super(MeveaEnv, self).__init__()
 
+    self.dirs_exist = self.check_dir(mvs_folder)
 
-    self.router = Router()
-    self.port = self.router.start()
+    if self.dirs_exist:
+        self.router = Router()
+        self.port = self.router.start()
+        
+        # Call method for obtaining model parameters from simulation xml file
+        self.parameters = ModelParameters(mvs_folder, self.port)
+        self.model_file_path = self.parameters.model_file_path
+        # Get amount of the parameters in the observation vector
+        self.obs_len = self.parameters.get_obs_len()
+        
+        # Get amount of the parameters in the action vector
+        self.act_low_list, self.act_high_list, self.act_len = self.parameters.get_act_len()
 
-    # Call method for obtaining model parameters from simulation xml file
-    self.parameters = ModelParameters(mvs_folder, self.port)
-    self.model_file_path = self.parameters.model_file_path
-    # Get amount of the parameters in the observation vector
-    self.obs_len = self.parameters.get_obs_len()
-    
-    # Get amount of the parameters in the action vector
-    self.act_low_list, self.act_high_list, self.act_len = self.parameters.get_act_len()
+        # Create observation and action numpy array
+        self.observation = np.zeros(self.obs_len, dtype=np.float32)
+        self.action = np.zeros(self.act_len, dtype=np.float32)
+        self.action_low = np.array(self.act_low_list, dtype=np.float32)
+        self.action_high = np.array(self.act_high_list, dtype=np.float32)
 
-    # Create observation and action numpy array
-    self.observation = np.zeros(self.obs_len, dtype=np.float32)
-    self.action = np.zeros(self.act_len, dtype=np.float32)
-    self.action_low = np.array(self.act_low_list, dtype=np.float32)
-    self.action_high = np.array(self.act_high_list, dtype=np.float32)
+        self.observation_space = spaces.Box(low=-np.inf, high=np.inf, shape=self.observation.shape)
+        self.action_space = spaces.Box(low=self.action_low, high=self.action_high, shape=self.action.shape)
 
-    self.observation_space = spaces.Box(low=-np.inf, high=np.inf, shape=self.observation.shape)
-    self.action_space = spaces.Box(low=self.action_low, high=self.action_high, shape=self.action.shape)
+        # Variable stating if simulation was terminated
+        self.closed =  True
+        
+        # Create Mevea workers
+        self.mev_worker = MevMultiProc(self.model_file_path, self.port)
 
-    
-    # Create Mevea workers
-    self.mev_worker = MevMultiProc(self.model_file_path, self.port)
-
-    # Create simulation parameters
-    self.info = {'workerState':'ti'}
-    self.done = [True]
-    self.reward = 0
-    self.observation = []
-
+        # Create simulation parameters
+        self.info = {'workerState':'ti'}
+        self.done = [True]
+        self.reward = 0
+        self.observation = []
+    else:
+        sys.exit()
 
   # Returns Box observation space 
   def get_observation_space(self):
@@ -69,8 +76,7 @@ class MeveaEnv(gym.Env):
     return self.parameters.dt
 
   def step(self, action):
-
-
+      
     request = self.router.recv()
 
     # Unpack values
@@ -88,6 +94,10 @@ class MeveaEnv(gym.Env):
     '''
 
     self.router.send([action.tolist(), 'st'])
+
+    if msvcrt.kbhit():
+        self.close()
+
 
     return self.observation, self.reward, self.done, self.info
   
@@ -140,8 +150,18 @@ class MeveaEnv(gym.Env):
       self.router.close()
       self.mev_worker.terminate()
       self.parameters.delete()
+      sys.exit()
       
+  def check_dir(self, mvs_folder):
 
+      if not Path.exists(Path(mvs_folder)):
+          print('Error: Directory {} not found'.format(mvs_folder))
+          return False
+      elif not Path.exists(Path(mvs_folder + '\Scripts\config.json')):
+          print('Error: Config file {} not found'.format(mvs_folder + '\Scripts\config.json'))
+          return False
+      else:
+          return True
 
 
 class ModelParameters():
@@ -304,6 +324,7 @@ class ModelParameters():
 
     return obs_len
 
+
   def get_act_len(self):
       
     count = 0
@@ -318,6 +339,7 @@ class ModelParameters():
     return inp_min, inp_max, count
 
 
+
 class XMLreader:
 
     def __init__(self, mvs_path, port):
@@ -325,7 +347,7 @@ class XMLreader:
         self.mvs_path = mvs_path
         self.port = port
         self.config_path = '{}\{}'.format(mvs_path,'Scripts')
-
+        
         # Get useful data from the config.json file
         self.current_dir_path, self.model_name, self.exclude, self.excluded_inputs = self.read_config_json()
 
@@ -356,15 +378,16 @@ class XMLreader:
                 dict.fromkeys(self.list_powertrain_keys, []),
                 dict.fromkeys(self.list_sensors_keys, [])
                 ]
-
-        
+         
     
     # Method for reading config.json file
     def read_config_json(self):
+        
 
         # config.json is in the same folder ==>
         config_file =  '{}\{}'.format(str(self.config_path),'config.json' )
         
+
         try:
             # Open read config file
             with open(config_file, 'r') as config_file_json:
@@ -372,7 +395,7 @@ class XMLreader:
                 name = data['model_name']
         except OSError as e:
             raise
-            print('Error: {}. Make sure that it is in Scripts folder!'.format(e))
+            print('Error: {}. Make sure that config is in Scripts folder!'.format(e))
             
 
         # Clean excluded items from spaces and put to lower case
@@ -397,8 +420,7 @@ class XMLreader:
         with open(config_file, 'w') as out_file:
             data.update({'port':self.port})
             json.dump(data, out_file, indent=4, sort_keys=True)
-
-
+            
         return self.config_path, name, excluded, excluded_inputs
 
     # Function for removing spaces and change to lowercase of the instances
