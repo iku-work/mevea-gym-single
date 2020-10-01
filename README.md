@@ -4,7 +4,7 @@
 
 ## General info
 ![excavator](https://github.com/iku-work/mevea-gym-single/blob/master/images/excavator.gif?raw=true)
-This is an implementation of the Mevea RL Gym with compliance to Open AI Gym.
+<br /> This is an implementation of the Mevea RL Gym with compliance to Open AI Gym.
 Use your own model for training reinforcement learning algorithms.
 It takes all parameters and inputs, unless they are not excluded, then creates observation and action vectors from them.
 Only thing you need to do is a reward function!
