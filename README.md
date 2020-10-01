@@ -22,11 +22,13 @@ pip install -e gym-mevea-single
 
 ### On Mevea side:
 
-- Add Mevea python interpreter to path. Then install all requirements manually using pip or mevea_setup.py.
-- Create Scripts directory in the folder with mvs file and place python scripts from the mevea_files gym folder.
+- Add Mevea python interpreter folders to path: ../Mevea/Resourses/Python/Bin and ../Mevea/Resourses/Python/Scripts   
+- Install all requirements manually using pip or mevea_setup.py.
+- Create Scripts directory in the folder with mvs file and place python scripts from the mevea_files of gym folder.
 - Assign mevea.py script to any input in the model.
-- Change model name in config.json
-- Use check_sim.py file to check the model. If there are any errors they will appear in LOG.txt
+- Change model name in config.json.
+- Create reward function in reward.py.
+- Use check_sim.py file to check the model. If there are any errors they will appear in LOG.txt.
 
 ## Usage
 
