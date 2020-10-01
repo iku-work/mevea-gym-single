@@ -49,11 +49,11 @@ sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
 ```
 ### Config Json
 You can configure training using json file.
-Debug - if false, simulation file starts automatically, true - you need to start it manually at the generated folder
-Episode duration - simulation duration in seconds till restart
-Excluded inputs - allows to exclude input from actions
-Excluded items - allows model parts to be excluded from observation vector 
-Model name - name of the model as on mvs file, for example, Jib_Crane
-Port - port of the simulation (chosen automatically)
-Render - if true runs mevea with visualisation
-Step delay - interval of actions in seconds
+- Debug - if false, simulation file starts automatically, true - you need to start it manually at the generated folder
+- Episode duration - simulation duration in seconds till restart
+- Excluded inputs - allows to exclude input from actions
+- Excluded items - allows model parts to be excluded from observation vector 
+- Model name - name of the model as on mvs file, for example, Jib_Crane
+- Port - port of the simulation (chosen automatically)
+- Render - if true runs mevea with visualisation
+- Step delay - interval of actions in seconds
