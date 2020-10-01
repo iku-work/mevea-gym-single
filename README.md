@@ -1,4 +1,4 @@
-# Mevea OpenAI Gym Environment 
+# M-Gym - a Mevea OpenAI Gym Environment 
 
 ![logo](https://github.com/iku-work/mevea-gym-single/blob/master/images/logo.JPG?raw=true)
 
