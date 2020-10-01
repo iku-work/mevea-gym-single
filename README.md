@@ -1,6 +1,6 @@
 # Mevea OpenAI Gym Environment 
 
-![](images/logo.jpg)
+<img src= "images/logo.jpg">
 
 ## General info
 This is an implementation of the Mevea RL Gym with compliance to Open AI Gym.
