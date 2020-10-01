@@ -1,5 +1,7 @@
 # Mevea OpenAI Gym Environment 
 
+![](images/logo.jpg)
+
 ## General info
 This is an implementation of the Mevea RL Gym with compliance to Open AI Gym.
 Use your own model for training reinforcement learning algorithms.
