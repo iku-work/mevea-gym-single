@@ -61,6 +61,9 @@ class MeveaEnv(gym.Env):
         self.done = [True]
         self.reward = 0
         self.observation = []
+
+        self.greeting()
+
     else:
         sys.exit()
 
@@ -76,7 +79,7 @@ class MeveaEnv(gym.Env):
     return self.parameters.dt
 
   def step(self, action):
-      
+
     request = self.router.recv()
 
     # Unpack values
@@ -163,6 +166,11 @@ class MeveaEnv(gym.Env):
       else:
           return True
 
+  def greeting(self):
+      print('=====================================================')
+      print('               Welcome to M-Gym! ')
+      print('        To abort training press any key... ')
+      print('=====================================================')
 
 class ModelParameters():
 
