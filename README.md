@@ -64,6 +64,6 @@ You can configure training using json file.
 - Render - if true runs mevea with visualisation
 - Step delay - interval of actions in seconds
 
-### Config Json
+## Contact details
 If you have any questions, please contact:
 <br />ilya.kurinov@lut.fi
