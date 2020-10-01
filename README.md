@@ -9,6 +9,7 @@
 Use your own model for training reinforcement learning algorithms.
 It takes all parameters and inputs, unless they are not excluded, then creates observation and action vectors from them.
 Only thing you need to do is a reward function!
+Examples can be found over here: 
 
     
 ## Requirements
