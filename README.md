@@ -1,6 +1,6 @@
 # Mevea OpenAI Gym Environment 
 
-![Logo](/images/logo.jpg)
+![logo](https://github.com/iku-work/mevea-gym-single/blob/master/images/logo.JPG?raw=true)
 
 ## General info
 This is an implementation of the Mevea RL Gym with compliance to Open AI Gym.
