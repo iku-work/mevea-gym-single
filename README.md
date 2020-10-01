@@ -1,4 +1,4 @@
-<meta name="google-site-verification" content="5DtLJ8yjLsiba2zsWCMS2u4ofg_BdQGRbljBOS_0oSI" />
+
 # M-Gym - a Mevea OpenAI Gym Environment 
 
 ![logo](https://github.com/iku-work/mevea-gym-single/blob/master/images/logo.JPG?raw=true)
