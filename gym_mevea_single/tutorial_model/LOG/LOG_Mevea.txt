@@ -1,13 +1,102 @@
-14:17:02: Model Jib_Crane loaded, using config and resources from C:/Program Files (x86)/Mevea/
-14:17:04: intitializing laser scanners
-14:17:04: NOTE: File "" is not present. Continuing...
-14:17:04: Setting camera to body 0: Ground
-14:17:04: Head Tracking inactive
-14:17:05: Total loading time 3.621229
-14:17:05: Uninitialized collision body 
-14:17:06: Uninitialized collision body 
-14:17:07: Uninitialized collision body 
-14:17:08: Uninitialized collision body 
-14:17:11: Uninitialized collision body 
-14:17:13: intitializing laser scanners
-14:17:13: Uninitialized collision body 
+13:39:57: Model Jib_Crane loaded, using config and resources from C:/Program Files (x86)/Mevea/
+13:39:59: intitializing laser scanners
+13:39:59:13:40:01: intitializing laser scanners
+13:40:02: NOTE: File "" is not present. Continuing...
+13:40:02: Setting camera to body 0: Ground
+13:40:02: Head Tracking inactive
+13:40:03: Total loading time 6.124049
+13:40:03: Uninitialized collision body 
+13:40:03: Disabling motion platform, another client detected
+13:40:03: U13:40:04: Uninitialized colli13:40:04: U13:40:05: Uninitialized collision body 
+13:40:06: Uninitialized collision body 
+13:40:07: Uninitialized collision body 
+13:40:08: Uninitialized colli13:40:08: U13:40:09: Uninitialized collision body 
+13:40:10: Uninitialized colli13:40:10: U13:40:11: Uninitialized colli13:40:11: U13:40:12: Uninitialized collision body 
+13:40:13: Uninitialized colli13:40:13: U13:40:14: Uninitialized colli13:40:14: U13:40:15: Uninitialized colli13:40:15: U13:40:16: Uninitialized collision body 
+13:40:17: Uninitialized collision body 
+13:40:18: Uninitialized collision body 
+13:40:19: Uninitialized collision body 
+13:40:20: Uninitialized colli13:40:20: U13:40:21: Uninitialized collision body 
+13:40:22: Uninitialized colli13:40:22: U13:40:23: Uninitialized colli13:40:23: U13:40:24: Uninitialized colli13:40:24: U13:40:25: Uninitialized colli13:40:25: U13:40:26: Uninitialized collision body 
+13:40:27: Uninitialized colli13:40:27: U13:40:28: Uninitialized collision body 
+13:40:29: Uninitialized collision body 
+13:40:30: Uninitialized colli13:40:30: U13:40:31: Uninitialized collision body 
+13:40:32: Uninitialized collision body 
+13:40:33: Uninitialized colli13:40:33: U13:40:34: Uninitialized colli13:40:34: U13:40:35: Uninitialized collision body 
+13:40:36: Uninitialized collision body 
+13:40:37: Uninitialized colli13:40:37: U13:40:38: Uninitialized colli13:40:38: U13:40:39: Uninitialized collision body 
+13:40:40: Uninitialized colli13:40:40: U13:40:41: Uninitialized collision body 
+13:40:42: Uninitialized colli13:40:42: U13:40:43: Uninitialized colli13:40:43: U13:40:44: Uninitialized colli13:40:44: U13:40:45: Uninitialized colli13:40:45: U13:40:46: Uninitialized collision body 
+13:40:47: Uninitialized collision body 
+13:40:48: Uninitialized colli13:40:48: U13:40:49: Uninitialized colli13:40:49: U13:40:50: Uninitialized colli13:40:50: U13:40:51: Uninitialized colli13:40:51: U13:40:52: Uninitialized colli13:40:52: U13:40:53: Uninitialized colli13:40:53: U13:40:54: Uninitialized collision body 
+13:40:55: Uninitialized collision body 
+13:40:56: Uninitialized colli13:40:56: U13:40:58: intitializing laser scanners
+13:40:58: Uninitialized collis13:40:58: 13:40:59: Uninitialized collision body13:41:00: intitializing laser scanners
+13:13:41:01: Uninitialized collision body 
+13:41:02: Uninitialized collision body 
+13:41:03: Uninitialized collision body 
+13:41:04: Uninitialized collision body 
+13:41:05: Uninitialized collision body 
+13:41:06: Uninitialized collision body 
+13:41:07: Uninitialized collision body 
+13:41:08: Uninitialized collision body 
+13:41:09: Uninitialized collision body 
+13:41:10: Uninitialized collision body 
+13:41:11: Uninitialized collision body 
+13:41:12: Uninitialized collision body 
+13:41:13: Uninitialized collision body 
+13:41:14: Uninitialized collision body 
+13:41:15: Uninitialized collision body 
+13:41:16: Uninitialized collision body 
+13:41:17: Uninitialized collision body 
+13:41:18: Uninitialized collision body 
+13:41:19: Uninitialized collision body 
+13:41:20: Uninitialized collision body 
+13:41:21: Uninitialized collision body 
+13:41:22: Uninitialized collision body 
+13:41:23: Uninitialized collision body 
+13:41:24: Uninitialized collision body 
+13:41:25: Uninitialized collision body 
+13:41:26: Uninitialized collision body 
+13:41:27: Uninitialized collision body 
+13:41:28: Uninitialized collision body 
+13:41:29: Uninitialized collision body 
+13:41:30: Uninitialized collision body 
+13:41:31: Uninitialized collision body 
+13:41:32: Uninitialized collision body 
+13:41:33: Uninitialized collision body 
+13:41:34: Uninitialized collision body 
+13:41:35: Uninitialized collision body 
+13:41:36: Uninitialized collision body 
+13:41:37: Uninitialized collision body 
+13:41:38: Uninitialized collision body 
+13:41:39: Uninitialized collision body 
+13:41:40: Uninitialized collision body 
+13:41:41: Uninitialized collision body 
+13:41:42: Uninitialized collision body 
+13:41:43: Uninitialized collision body 
+13:41:44: Uninitialized collision body 
+13:41:45: Uninitialized collision body 
+13:41:46: Uninitialized collision body 
+13:41:47: Uninitialized collision body 
+13:41:48: Uninitialized collision body 
+13:41:49: Uninitialized collision body 
+13:41:50: Uninitialized collision body 
+13:41:51: Uninitialized collision body 
+13:41:52: Uninitialized collision body 
+13:41:53: Uninitialized collision body 
+13:41:54: Uninitialized collision body 
+13:41:55: Uninitialized collision body 
+13:41:56: Uninitialized collision body 
+13:41:58: intitializing laser scanners
+13:41:58: Uninitialized collision body 
+13:41:59: Uninitialized collision body 
+13:42:00: Uninitialized collision body 
+13:42:01: Uninitialized collision body 
+13:42:02: Uninitialized collision body 
+13:42:03: Uninitialized collision body 
+itialized collision body 
+13:42:00: Disabling motion platform, another client detected
+13:42:01: Uninitialized collision body 
+13:42:02: Uninitialized collision body 
+13:42:03: Uninitialized collision body 

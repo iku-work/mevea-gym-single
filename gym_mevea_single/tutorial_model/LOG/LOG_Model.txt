@@ -1,11 +1,9 @@
 Model: Jib_Crane
  Gravity=[0 -9.81 0]
 
-Hydraulics integration method RK4
+Using fourth order Runge-Kutta numerical integration method with Recursive formulation and dense matrix solver.
 
-Recursive solver
-
-Using fourth order Runge-Kutta
+Hydraulics integration at every solution of derivatives using fourth order Runge-Kutta.
 
 ===============================================================================
 Bodies:
@@ -313,6 +311,8 @@ Rotate_motor, Type = 1
  Velocity driven
  PrimName=ForceR_Pillar, Kw=10, J=10, wref=0, SplName=Motor_spline
  M=0, itot=500, r=0 
+ RPM request control signal = Input_Pillar_Rotate
+ Parking brake control signal = Input_Pillar_Brake
 ===============================================================================
 Hydraulic volumes:
 -------------------------------------------------------------------------------
