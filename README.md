@@ -63,3 +63,7 @@ You can configure training using json file.
 - Port - port of the simulation (chosen automatically)
 - Render - if true runs mevea with visualisation
 - Step delay - interval of actions in seconds
+
+### Config Json
+If you have any questions, please contact:
+<br />ilya.kurinov@lut.fi
