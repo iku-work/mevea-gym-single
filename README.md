@@ -1,3 +1,4 @@
+
 # M-Gym - a Mevea OpenAI Gym Environment 
 
 ![logo](https://github.com/iku-work/mevea-gym-single/blob/master/images/logo.JPG?raw=true)
@@ -8,7 +9,8 @@
 Use your own model for training reinforcement learning algorithms.
 It takes all parameters and inputs, unless they are not excluded, then creates observation and action vectors from them.
 Only thing you need to do is a reward function!
-
+<br /> Examples can be found over here: 
+https://github.com/iku-work/Gym-Examples
     
 ## Requirements
 
