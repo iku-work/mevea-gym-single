@@ -11,7 +11,6 @@ from multiprocessing import Process
 import shutil
 import errno
 import time
-import json
 import zmq
 import uuid
 import msvcrt
