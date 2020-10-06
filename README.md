@@ -30,7 +30,8 @@ pip install -e gym-mevea-single
 
 ### On Mevea side:
 
-- Add Mevea python interpreter folders to path: ../Mevea/Resourses/Python/Bin and ../Mevea/Resourses/Python/Scripts   
+- Add Mevea python interpreter folders to path: ../Mevea/Resourses/Python/Bin and ../Mevea/Resourses/Python/Scripts 
+- Add Mevea executable files to path ../Meva/Bin
 - Install all requirements manually using pip or mevea_setup.py.
 - Make sure, that Mevea Debug Console is on.
 - Create Scripts directory in the folder with mvs file and place python scripts from the mevea_files of gym folder.
